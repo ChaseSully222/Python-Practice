@@ -12,9 +12,9 @@ numbers = range(100)
 for number in numbers:
     if number % 5 == 0 and number % 7 == 0:
         print("ChickenMonkey")
-    elif number % 7 == 0:
-        print("Monkey")
     elif number % 5 == 0:
         print("Chicken")
+    elif number % 7 == 0:
+        print("Monkey")
     else:
         print(number)
