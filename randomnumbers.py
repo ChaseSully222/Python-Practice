@@ -8,6 +8,8 @@ my_randoms = list()
 for i in range(10):
     my_randoms.append(random.randrange(1, 6))
 
+print(my_randoms)
+
 # Generate a list of numbers 1..10
 numbers_1_to_10 = range(1, 11)
 
@@ -16,8 +18,13 @@ for number in numbers_1_to_10:
     the_numbers_match = False
 
     # Iterate your random number list here
-for number in my_randoms:
+    for randomNumber in my_randoms:
 
     # Does my_randoms contain number? Change the boolean.
-    
-    print(f'{number} is in the random list')
+     if randomNumber == number:
+        the_numbers_match = True
+
+    if the_numbers_match == True:
+        print(f"my_randoms list does contain {number}")
+    else:
+        print(f"my_randoms list does not contain {number}")
